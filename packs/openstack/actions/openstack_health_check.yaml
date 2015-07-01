@@ -1,0 +1,24 @@
+---
+description: Run print text flow
+enabled: true
+name: openstack_health_check
+pack: openstack
+runner_type: "cloudslang"
+entry_point: "/opt/cslang/content/io/cloudslang/openstack/openstack_health_check.sl"
+
+parameters:
+  host:
+    description: "OpenStack machine host"
+    type: string
+  img_ref:
+    description: "Image reference of the server to be created"
+    type: string
+  username:
+    description: "OpenStack username"
+    type: string
+  password:
+    description: "OpenStack password"
+    type: string
+  tenant_name:
+    description: "Name of the project on OpenStack"
+    type: string
