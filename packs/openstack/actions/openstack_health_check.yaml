@@ -10,15 +10,46 @@ parameters:
   host:
     description: "OpenStack machine host"
     type: string
+    required: true
+    position: 0
   img_ref:
     description: "Image reference of the server to be created"
     type: string
+    required: true
+    position: 4
   username:
     description: "OpenStack username"
     type: string
+    required: true
+    position: 1
   password:
     description: "OpenStack password"
     type: string
+    required: true
+    secret: true
+    position: 2
   tenant_name:
     description: "Name of the project on OpenStack"
     type: string
+    required: true
+    position: 3
+  email_host:
+    description: "Email host"
+    type: string
+    default: ""
+    position: 5
+  email_port:
+    description: "Email port"
+    type: string
+    default: ""
+    position: 6
+  to:
+    description: "Email recipient"
+    type: string
+    default: ""
+    position: 7
+  from:
+    description: "Email sender"
+    type: string
+    default: ""
+    position: 8
