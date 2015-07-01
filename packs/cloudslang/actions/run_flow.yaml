@@ -1,13 +1,13 @@
 ---
-description: Greet StackStorm from cloudslang ;) !
+description: Run print text flow
 enabled: true
 entry_point: ""
-name: run_flow
+name: print_text
 pack: cloudslang
+entry_point: "/opt/cslang/content/io/cloudslang/base/print/print_text.sl"
+
 parameters:
-  flow_path:
-    default: "/opt/stackstorm/packs/examples/actions/workflows/print_text.sl"
+  text:
+    description: "Text to print to the console"
     type: string
-  inputs:
-    type: object
-runner_type: "cloudslang"
+
