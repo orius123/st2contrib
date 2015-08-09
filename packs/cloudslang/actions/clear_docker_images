@@ -1,0 +1,12 @@
+---
+description: Clean docker un-used images
+enabled: true
+name: clear_docker_images
+pack: cloudslang
+runner_type: "cloudslang"
+entry_point: "/opt/cslang/content/io/cloudslang/base/print/print_text.sl"
+
+parameters:
+  text:
+    description: "Text to print to the console"
+    type: string
